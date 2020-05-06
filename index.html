@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <!-- NavBar -->
+    <div style="height:40vh">
+        <!-- NavBar -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="index.html text-light">
                 <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
@@ -36,7 +37,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
@@ -56,12 +57,13 @@
                 </form>
             </div>
         </nav>
-    
-    <div class="container-fluid container bg-primary display-1"></div>
 
 
-    <!-- BackGround
-         <div class="bg-cover" style="background-image: url(https://cameronscookware.com/wp-content/uploads/2019/12/solid-gray-background-lovely-solid-gray-wallpaper-wallpapersafari-of-the-day-of-solid-gray-background-1.jpg);position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-repeat: no-repeat;background-position: 50%;background-size: cover; 
+        <div class="container-fluid container bg-primary display-1"></div>
+
+
+        <!-- BackGround -->
+        <div class="bg-cover" style="background-image: url(https://cameronscookware.com/wp-content/uploads/2019/12/solid-gray-background-lovely-solid-gray-wallpaper-wallpapersafari-of-the-day-of-solid-gray-background-1.jpg);position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-repeat: no-repeat;background-position: 50%;background-size: cover; 
     position: absolute;
     top: 0;
     bottom: 0;
@@ -70,11 +72,40 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;"> -->
+        </div>
     </div>
+
+    <!-- Cards -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Encontre um cafofo!🏠</h5>
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid container bg-secondary display-1">
-        2nd section
-    </div>
+
+
     <div class="container-fluid container bg-success display-1">
         3rd section
     </div>
@@ -87,7 +118,8 @@
     <div class="container-fluid container bg-info display-1">
         6th section
     </div>
-
+    </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
