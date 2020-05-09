@@ -14,18 +14,18 @@ function renderCards(cards) {
 
 function renderCard(card) {
     const div = document.createElement("div");
-    div.className = "col md-4";
+    div.className = "col md-3";
    // div.style.width = "40%";
     div.style.maxwidth = "23%";
     div.style.minWidth = "23%";
     div.style.margin = ".70rem";
     div.innerHTML = `
-    <div class="card mb-4">
-      <img src="${card.photo}" class="card-img-top" alt="${card.name}">
-     <div class="card-body bg-secondary text-white">
+    <div class="card mb-3 border-0">
+      <img src="${card.photo}" class="card-img-top rounded" alt="${card.name}">
+     <div class="card-body bg-secondary text-white pt-2">
+     <p class="small text-uppercase my-sm-n1 col-auto badge badge-pill badge-success">${card.property_type}</p>
         <h5 class="card-title">${card.name}</h5>
-        <p class="card-text">${card.property_type}</p>
-        <p class="card-text"><small class="text-muted">R$${card.price},00</small></p>
+        <p class="card-text"><small class="font-italic"><b>R$${card.price}</b>/noite</small></p>
      </div> 
     </div>
 `;
