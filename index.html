@@ -12,16 +12,39 @@
 
     <title>Cafofos</title>
     <link rel="icon" type="image/gif" sizes="16x16" href="https://img.icons8.com/bubbles/2x/home.png" />
+    <style>
+        <style>@media(min-width: 768px) {
+            section {
+                padding-top: 13.3125rem;
+            }
+
+            section {
+                padding-bottom: 7.5rem;
+            }
+        }
+
+        .br0,
+        .gj-datepicker-bootstrap [role=right-icon] button,
+        .form-control {
+            border-radius: 0 !important
+        }
+
+        .card-img-top {
+            max-height: 160px;
+            min-height: 160px;
+            object-fit: cover
+        }
+    </style>
 </head>
 
 <body>
-    <div style="height:50vh">
+    <div class="container-xl" style="height:100vh">
         <!-- NavBar -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="index.html text-light">
                 <img src="https://img.icons8.com/bubbles/2x/home.png" width="40" height="40"
                     class="d-inline-block align-top text-light" alt="logo">
-                <span class="text-light font-weight-bolder "> Cafofos </span>
+                <span class="text-light font-weight-bolder "> Cafofo</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,12 +80,11 @@
                 </form>
             </div>
         </nav>
-    </div>
+
         <!-- BackGround -->
-        <div class="bg-cover img-fluid" style="background-image: url(https://cameronscookware.com/wp-content/uploads/2019/12/solid-gray-background-lovely-solid-gray-wallpaper-wallpapersafari-of-the-day-of-solid-gray-background-1.jpg);
+        <section class="section section-top section-full">
+            <div class="bg-cover img-fluid " style="background-image: url(https://cameronscookware.com/wp-content/uploads/2019/12/solid-gray-background-lovely-solid-gray-wallpaper-wallpapersafari-of-the-day-of-solid-gray-background-1.jpg);
     position: absolute;
-    height: auto;
-    max-width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -70,14 +92,27 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;">
-        </div>
+            </div>
 
-
+            <!-- Overlay -->
+            <div class="bg-overlay"></div>
+            <!-- Triangles -->
+            <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+            <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+            <!-- Content -->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-8 col-lg-7">
+                    </div>
+                </div> <!-- / .row -->
+            </div> <!-- / .container -->
+        </section>
+        
         <!-- Search Card -->
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-7">
-                    <div class="card">
+                <div class="col-sm-7 ">
+                    <div class="card ">
                         <div class="card-header">
                             <h5>Encontre um Cafofo!🏠</h5>
                             <div class="card-body">
@@ -98,20 +133,54 @@
                 </div>
             </div>
         </div>
-        <!-- Hospedagens -->
-        <div class="container-fluid container py-3 mt-4">
-            <h2 class="h3">Sugestões de Cafofos para você</h2>
-            <div id="cards" class="row mt-4">
-                    <!--Cards-->
-                    <script src="dataBase.js"></script>
+    </div>
+    <!-- Hospedagens -->
+    <div class="container-fluid container py-3 mt-4">
+        <h2 class="h3">Sugestões de Cafofos para você</h2>
+        <!--Cards-->
+        <div id="cards" class="row mt-4">
+            <script src="dataBase.js"></script>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md ">
+                <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                <small class="d-block mb-3 text-muted ml-2">© 2017-2019</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                    <li><a class="text-muted" href="#">Another one</a></li>
+                    <li><a class="text-muted" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
             </div>
         </div>
-        <div class="container-fluid container bg-danger display-1">
-            5th section
-        </div>
-    
+    </footer>
 
-    <!-- Optional JavaScript -->
     <!--Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
