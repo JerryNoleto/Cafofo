@@ -20,8 +20,8 @@ function renderCard(card) {
     const div = document.createElement("div");
     div.className = "col md-3";
    // div.style.width = "40%";
-    div.style.maxwidth = "23%";
-    div.style.minWidth = "23%";
+    div.style.maxwidth = "297px";
+    div.style.minWidth = "297px";
     div.style.margin = ".70rem";
     div.innerHTML = `
     <div class="card mb-3 border-0">
